@@ -677,3 +677,168 @@ body.sweet-dark {
   --secondary-button: #ff9af7;
   --icons-background: #302530;
 }
+/* -------------------------------------------------------------------------- */
+/*  Adwaita Dark — libadwaita-inspired theme                                  */
+/* -------------------------------------------------------------------------- */
+body.adwaita {
+  /* Adwaita palette */
+  --adw-bg-window: #242424;
+  --adw-bg-view: #1e1e1e;
+  --adw-bg-card: #303030;
+  --adw-bg-sidebar: #2e2e2e;
+  --adw-bg-headerbar: #303030;
+  --adw-bg-input: #383838;
+  --adw-bg-hover: rgba(255, 255, 255, 0.07);
+  --adw-bg-active: rgba(255, 255, 255, 0.12);
+
+  --adw-text: #ffffff;
+  --adw-text-secondary: rgba(255, 255, 255, 0.7);
+  --adw-text-disabled: rgba(255, 255, 255, 0.4);
+
+  --adw-accent: #78aeed;
+  --adw-accent-bg: #3584e4;
+  --adw-accent-hover: #92c4ff;
+  --adw-accent-selected-bg: rgba(120, 174, 237, 0.2);
+
+  --adw-success: #57e389;
+  --adw-warning: #f8e45c;
+  --adw-danger: #ff7b63;
+  --adw-danger-hover: #ff9985;
+
+  --adw-border: rgba(255, 255, 255, 0.1);
+  --adw-shadow: rgba(0, 0, 0, 0.36);
+
+  /* Map to Heroic variables */
+
+  /* Text */
+  --text-default: var(--adw-text);
+  --text-secondary: var(--adw-text-secondary);
+  --text-tertiary: var(--adw-text-secondary);
+  --text-quartenary: var(--adw-text-disabled);
+  --text-hover: var(--adw-accent);
+  --text-title: var(--adw-text);
+  --text-gametitle: var(--adw-text);
+  --text-pause-cancel: var(--adw-warning);
+  --text-danger: var(--adw-danger);
+  --text-log: var(--adw-warning);
+  --text-warning: var(--adw-warning);
+
+  /* Backgrounds */
+  --background: var(--adw-bg-window);
+  --body-background: var(--adw-bg-view);
+  --background-darker: var(--adw-bg-view);
+  --background-darker-80: rgba(30, 30, 30, 0.85);
+  --background-lighter: var(--adw-bg-card);
+  --background-secondary: var(--adw-bg-card);
+  --current-background: var(--body-background);
+  --input-background: var(--adw-bg-input);
+  --modal-background: var(--adw-bg-window);
+  --modal-backdrop: rgba(0, 0, 0, 0.6);
+  --modal-border: var(--adw-border);
+  --search-bar-background: var(--adw-bg-input);
+  --search-bar-border: var(--adw-border);
+  --controller-hints-background: transparent;
+
+  /* Sidebar / Navbar */
+  --navbar-background: var(--adw-bg-sidebar);
+  --navbar-active-background: var(--adw-accent-selected-bg);
+  --navbar-active: var(--adw-accent);
+  --navbar-inactive: var(--adw-text-secondary);
+  --navbar-accent: var(--adw-accent);
+  --divider: var(--adw-border);
+
+  /* Accent */
+  --accent: var(--adw-accent);
+  --accent-02: var(--adw-accent-selected-bg);
+  --accent-overlay: var(--adw-accent-hover);
+  --link-highlight: var(--adw-accent);
+
+  /* Buttons */
+  --primary: var(--adw-accent-bg);
+  --primary-button: var(--adw-accent-bg);
+  --primary-hover: var(--adw-accent-hover);
+  --primary-active: var(--adw-accent);
+  --secondary: var(--adw-bg-card);
+  --secondary-button: var(--adw-bg-card);
+  --secondary-hover: var(--adw-bg-hover);
+  --secondary-button-overlay: var(--adw-bg-active);
+  --tertiary-button: var(--adw-warning);
+  --tertiary-button-overlay: var(--adw-warning);
+  --success-button: var(--adw-success);
+  --disabled-button: var(--adw-bg-card);
+  --disabled-button-overlay: var(--adw-text-disabled);
+  --play-button: var(--adw-accent-bg);
+  --install-button: var(--adw-bg-card);
+  --cancel-button: var(--adw-danger);
+  --cancel-button-overlay: var(--adw-danger-hover);
+  --download-button: var(--adw-accent-bg);
+  --download-button-overlay: var(--adw-accent-hover);
+  --button-stroke: var(--adw-border);
+
+  /* Action icons */
+  --action-icon: var(--adw-text);
+  --action-icon-hover: var(--adw-accent);
+  --action-icon-active: var(--adw-accent-hover);
+  --icon-disabled: var(--adw-text-disabled);
+  --icon-disabled-overlay: var(--adw-bg-hover);
+  --icons-background: var(--adw-bg-card);
+
+  /* Status */
+  --success: var(--adw-success);
+  --success-hover: var(--adw-success);
+  --danger: var(--adw-danger);
+  --danger-hover: var(--adw-danger-hover);
+
+  /* Anticheat */
+  --anticheat-denied: var(--adw-danger);
+  --anticheat-broken: var(--adw-danger);
+  --anticheat-running: var(--adw-accent);
+  --anticheat-supported: var(--adw-success);
+  --anticheat-planned: var(--adw-warning);
+  --anticheat-unknown: var(--adw-text-disabled);
+
+  /* Game card */
+  --gamecard-title-color: rgba(30, 30, 30, 0.85);
+  --gradient-gamecard: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 1.8%,
+    var(--gamecard-title-color) 45%
+  );
+  --gradient-body-background: var(--body-background);
+
+  /* OSK */
+  --osk-background: var(--adw-bg-window);
+  --osk-button-background: var(--adw-bg-input);
+  --osk-button-border: var(--adw-border);
+
+  /* Alphabet filter */
+  --alphabet-filter-accent-color: var(--adw-accent);
+  --alphabet-filter-accent-hover: var(--adw-accent-hover);
+
+  /* Typography — system stack with Cantarell/Adwaita Sans first */
+  font-family:
+    'Adwaita Sans',
+    'Cantarell',
+    -apple-system,
+    'Segoe UI',
+    system-ui,
+    sans-serif;
+
+  /* Rounded corners — libadwaita style */
+  .Sidebar__section a,
+  .Sidebar__section button,
+  button,
+  .gameCard,
+  .gameListItem,
+  input,
+  select,
+  .MuiPaper-root {
+    border-radius: 6px;
+  }
+
+  .modal,
+  .Dialog,
+  .MuiDialog-paper {
+    border-radius: 12px;
+  }
+}

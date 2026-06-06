@@ -16,8 +16,8 @@ function EmptyLibraryMessage() {
       <br />
       <br />
       Click <NavLink to="/login">here</NavLink> to log in with your Epic,
-      GOG.com, Amazon, or Zoom accounts. Then, your games will show up here in
-      the Library.
+      GOG.com, or Zoom accounts. Then, your games will show up here in the
+      Library.
       <br />
       <br />
       To use games or apps from other sources, click <AddGameButton /> to add
